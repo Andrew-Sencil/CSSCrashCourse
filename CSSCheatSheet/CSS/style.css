@@ -1,0 +1,247 @@
+/* This means the everything inside the html will be styled as what is inside this method
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+*/
+body
+{
+    background-color: #f4f4f4;
+    color: #555555;
+    
+    /*font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;*/
+
+    /*Another way of doing the font editing above*/
+    font: normal 16px Arial, Helvetica, sans-serif;
+
+    line-height: 1.6em;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover
+{
+    color: red;
+}
+
+a:active
+{
+    color: green;
+}
+ /*
+a:visited
+{
+    color: #000;
+}
+*/
+.button
+{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover
+{
+    background: red;
+    color: #fff;
+}
+
+.clr
+{
+    clear: both;
+}
+
+/*When dealing with contaiers, should use % when it comes to changing the size */
+.container
+{
+    width: 80%;
+    margin: auto;
+}
+
+.box-1
+{
+
+    background-color: #333;
+    color: #fff;
+
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    /*This is the same as setting the border above manually*/
+    border: 5px red solid;
+
+    padding-top: 20px;
+    padding-top: 20px;
+    padding-top: 20px;
+    padding-top: 20px;
+    /*This is the same as setting the padding above manually*/
+    padding: 20px;
+
+    margin-top: 20px;
+    /*The first indicates that the top and bottom margin will 
+    have 20px while the left and right will have 0px*/
+    margin: 20px 0px;
+}
+
+/*Text formatting styles*/
+.box-1 h1
+{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2
+{
+    border:3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories
+{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2
+{
+    text-align: center;
+}
+
+.categories ul
+{
+    padding: 0;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li
+{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/check.png');
+}
+
+.myForm
+{
+    padding: 20px;
+}
+
+.myForm.form-group
+{
+    padding-bottom: 15px;
+}
+
+.myForm label
+{
+    /*Block level elements will be put into a new line 
+    and will go across the entire line*/
+    display: block;
+}
+
+.myForm input[type = "text"], .myForm [type = "email"], .myForm textarea
+{
+    padding: 8px;
+    width: 100%;
+}
+
+.block
+{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    /*border-box makes everything fit to the width*/
+    box-sizing: border-box;
+}
+
+#main-block
+{
+    float: left;
+    width: 70%;
+}
+
+#sidebar
+{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box
+{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    /*This makes the h1 element go back inside the box*/
+    position: relative;
+    background-image: url('../images/winter.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.p-box h1S
+{
+    position: absolute;
+    top: 40px;
+}
+
+.p-box h2
+{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me
+{
+    position: fixed;
+    top: 400px;
+}
+
+.myList li:first-child
+{
+    background: red;
+}
+
+.myList li:last-child
+{
+    background: blue;
+    color: white
+}
+
+.myList li:nth-child(5)
+{
+    background: yellow;
+}
+
+.myList li:nth-child(even)
+{
+    background: gray;
+}

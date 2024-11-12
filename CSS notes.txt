@@ -1,0 +1,126 @@
+CSS notes
+
+•CSS - Cascading StyleSheets
+- Used for website layout and design
+- Not a programming language
+
+3 Methods for Adding CSS
+•Inline CSS: Directly in the HTML element <NO!>
+•Internal CSS: Using <style> tags within a single document
+•External CSS: Linking an external .css file
+
+EX:
+-Inline CSS:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheate Sheet</title>
+</head>
+<body>
+    <h1 style="color:red">Hello World!</h1>
+</body>
+</html>
+
+-Internal CSS:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheate Sheet</title>
+    <style type="text/css">
+	h1
+	{
+	    color: blue;
+	}
+</head>
+<body>
+    <h1 style="color:red">Hello World!</h1>
+</body>
+</html>
+
+-External CSS:
+	CSS:
+		h1
+		{
+    			color: green
+		}
+
+	html:
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+    			<meta charset="UTF-8">
+    			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    			<title>CSS Cheat Sheet</title>
+    			<link rel="stylesheet" href="CSS/style.css">
+		</head>
+		<body>
+    			<h1>Hello World!</h1>
+		</body>
+		</html>
+
+•CSS Selectors:
+
+a //Selector
+{ //Declaration start
+	background-color: yellow; //background-color - property // : - property/value separator // yellow - value // ; - declaration separator
+} //Declaration End
+
+•Colors in CSS: 
+You can use: 
+-Color names
+-HTML 5 Color names
+-Hexadecimal
+-RGB
+
+EX:
+body
+{
+	color: red;
+	background: coral;
+}
+
+h1
+{
+	color: #00ff00;
+}
+
+p
+{
+	color: rgb(0, 0, 255);	
+}
+
+if you call for a class use ".", then if id use "#"
+
+Margin and Padding Shorthand
+Long method:
+p
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+Short method:
+p
+{
+	margin: 5px 10px 5px 10px;
+}
+
+or
+p
+{
+	margin: 5px 10px
+}
+
+•Positioning in CSS
+- Static //Default position
+- Relative //the element is relative to its normal position but can add top, left, bottom, right
+- Absolute //target whatever position that we want inside of a relative element
+- Fixed //Fixed position to the browser window
+- Initial //Sets the property to its default value
+- Inherit //Will inherit whatever property of its parent element has
